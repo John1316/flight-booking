@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <title>Dopal Customers</title>
+
+        <!-- Styles -->
+        <link href="assets/css/page.min.css" rel="stylesheet">
+        <link href="assets/css/all.min.css" rel="stylesheet">
+        <link href="assets/css/jquery.seat-charts.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" href="assets/img/favicon.png">
+
+        <!--  Open Graph Tags -->
+        <meta property="og:title" content="TheSaaS">
+        <meta property="og:description" content="A responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4.">
+        <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
+        <meta property="og:url" content="http://thetheme.io/thesaas/">
+        <meta name="twitter:card" content="summary_large_image">
+    </head>
+
+    <body>
+        <main class="booking py-7">
+
+            <!-- start booking serch -->
+            <section class="booking__search">
+                <div class="container">
+                    <div class="row bg-white shadow-5 p-5">
+                        <div class="col-12">
+                            <!-- form start here for search of booking -->
+                            <form action="" method="post">
+                                <div class="card border-2" id="bookingFilterCard">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-12">
+                                                <div class="form-group">
+                                                    <label for="my-input">Text</label>
+                                                    <select class="form-control border-2">
+                                                        <option>Personal</option>
+                                                        <option>Startup</option>
+                                                        <option>Business</option>
+                                                        <option>Enterprise</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <div class="form-group">
+                                                    <label for="my-input">Text</label>
+                                                    <select class="form-control border-2">
+                                                        <option>Personal</option>
+                                                        <option>Startup</option>
+                                                        <option>Business</option>
+                                                        <option>Enterprise</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-12">
+                                                <div class="form-group">
+                                                    <label for="">Going</label>
+                                                    <input type="date" class="form-control border-2" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-12">
+                                                <div class="form-group">
+                                                    <label for="">Arrival</label>
+                                                    <input type="date" class="form-control border-2" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-12">
+                                                <div class="form-group">
+                                                    <label for="" class="text-white booking__search--labelnone">Lorem, ipsum.</label>
+                                                    <button type="submit" class="btn btn-main btn-lg">Search</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- form End here for search of booking -->
+                        </div>
+                        <button class="btn btn-main btn-block my-2" id="bookingFilterBtn"><i class="fas fa-filter" aria-hidden="true"></i></button>
+
+                    </div>
+                </div>
+            </section>
+            <!-- end booking serch -->
+
+            <!-- Start seats -->
+            <section class="booking__seats my-5 justify-content-center">
+                <div class="container">
+                    <div class="row bg-white shadow-5 p-5">
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <div id="seat-map"></div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                            <div class="booking-details">
+                                <div id="legend"></div>
+                                <h2 class="font-weight-bold">Booking Details</h2>
+                                <h3> Selected Seats <span id="counter">0</span></h3>
+                                <h4 class="font-weight-bold">Total: <b>$<span id="total">0</span></b></h4>
+                                <div class="booking__seats--center row">
+                                    <button class="btn btn-main checkout-button d-block">Checkout</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Start seats -->
+            
+            <!--Start booking stations -->
+            <section class="booking__stations my-5">
+                <div class="container">
+                    <div class="row bg-white shadow-5 p-5">
+                        <div class="col-12">
+                            <h2 class="my-3 f-600">Stations</h2>
+                            <button class="btn btn-main my-3 mr-3 booking__stations--btns-1"><i class="booking__stations--i1 fas fa-check active mr-2"></i>Alex</button>
+                            <button class="btn btn-main my-3 mr-3 booking__stations--btns-2"><i class="booking__stations--i2 fas fa-check d-none mr-2"></i>sharm</button>
+                            <button class="btn btn-main my-3 mr-3 booking__stations--btns-3"><i class="booking__stations--i3 fas fa-check d-none mr-2"></i>Gouna</button>
+                        </div>
+                        <div class="col-12">
+                            <h2 class="my-3 f-600">Trip details</h2>
+                            <div class="hr-gray-100 my-4"></div>
+                            <ul class="list-unstyled">
+                                <li class="mb-3"><i class="fas fa-road mr-2"></i>Trip Road : #66666</li>
+                                <li class="mb-3"><i class="fas fa-plane-departure mr-2"></i>The time for took off the trip is 11:15 pm at 10-24-2020</li>
+                                <li class="mb-3"><i class="fas fa-plane-arrival mr-2"></i>Arrival time is 05:30 am to Sharm El Sheikh</li>
+                            </ul>
+                        </div>
+                        <div class="hr-gray-100 my-5"></div>
+                        <div class="col-12">
+                            <p><i class="fas fa-bus mr-2"></i>The trip is provided by the High Jet company for land and sea transport</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p><i class="fas fa-phone mr-2"></i>Phone : 01111111123</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p><i class="fas fa-envelope mr-2"></i>Email Address : email@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Start booking stations -->
+            
+            <!--Start checkout  -->
+            <section class="booking__checkout my-5">
+                <div class="container">
+                    <div class="row bg-white shadow-5 p-5">
+                        <div class="col-12">
+                            <div class="card border-2">
+                                <div class="card-body">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#enter-info" role="tab" aria-controls="nav-home" aria-selected="true">Enter information</a>
+                                            <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#payement-way" role="tab" aria-controls="nav-profile" aria-selected="false">Payement Way</a>
+                                            <a class="nav-link" id="nav-contact-tab" data-toggle="tab" href="#confirmation-rersvation" role="tab" aria-controls="nav-contact" aria-selected="false">Confirmation Rersvation</a>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="enter-info" role="tabpanel" aria-labelledby="nav-home-tab">
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <div class="card border-2 my-3">
+                                                        <div class="card-body">
+                                                            <form action="" method="post">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-lg-4">
+                                                                        <div class="form-group">
+                                                                            <label>Traveller name</label>
+                                                                            <input class="form-control border-2" type="text" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-lg-4">
+                                                                        <div class="form-group">
+                                                                            <label>Traveller Phone</label>
+                                                                            <input class="form-control border-2" type="text" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12 col-lg-4">
+                                                                        <div class="form-group">
+                                                                            <label>Traveller Email</label>
+                                                                            <input class="form-control border-2" type="text" placeholder="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-10 col-lg-3">
+                                                                        <div class="form-group">
+                                                                            <button class="btn-main btn">Payement method &rarr;</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="payement-way" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <div class="card border-2 my-3">
+                                                        <div class="card-body">
+                                                            <form action="" method="post">
+                                                                <div class="row">
+                                                                    <div class="col-6">
+                                                                        <button class="btn btn-warning btn-lg"><img src="assets/img/fawry-png.png" class="w-75" alt=""></button>
+                                                                    </div>
+                                                                    <div class="col-6">
+                                                                        <button class="btn btn-info btn-lg"><img src="assets/img/Visa-png.png" class="w-75" alt=""></button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="confirmation-rersvation" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            <div class="row no-gutters">
+                                                <div class="col-12">
+                                                    <div class="card border-2 my-3">
+                                                        <div class="card-body">
+                                                            <form action="" method="post">
+                                                                <div class="row">
+                                                                    <h4>Your code number 134746346343</h4>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--Start checkout -->
+            
+        </main>
+        <script src="assets/js/page.min.js"></script>
+        <script src="assets/js/jquery.seat-charts.js"></script> 
+        <script src="assets/js/script.js"></script> 
+
+    </body>
+</html>

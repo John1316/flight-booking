@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+
+        <title>Home</title>
+
+        <!-- Styles -->
+        <link href="assets/css/page.min.css" rel="stylesheet">
+        <link href="assets/css/all.min.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <!-- Favicons -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" href="assets/img/favicon.png">
+
+        <!--  Open Graph Tags -->
+        <meta property="og:title" content="TheSaaS">
+        <meta property="og:description" content="A responsive, professional, and multipurpose SaaS, Software, Startup and WebApp landing template powered by Bootstrap 4.">
+        <meta property="og:image" content="http://thetheme.io/thesaas/assets/img/og-img.jpg">
+        <meta property="og:url" content="http://thetheme.io/thesaas/">
+        <meta name="twitter:card" content="summary_large_image">
+    </head>
+    <body class="demo-navbar">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-main navbar-stick-dark" data-navbar="sticky">
+            <div class="container">
+
+                <div class="navbar-left">
+                    <button class="navbar-toggler" type="button">&#9776;</button>
+                    <a class="navbar-brand" href="#">
+                        <img class="logo" src="assets/img/Logo/001.png" alt="logo">
+                    <!-- <img class="logo-light" src="../assets/img/logo-light.png" alt="logo"> -->
+                    </a>
+                </div>
+
+            <section class="navbar-mobile">
+                <nav class="nav nav-navbar m-auto">
+                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </nav>
+
+                <span class="navbar-divider"></span>
+
+                <div>
+                    <a class="btn btn-sm btn-round btn-main text-white ml-lg-4 mr-2" id="login">Sign in</a>
+                    
+                </div>
+            </section>
+
+            </div>
+        </nav>
+        <!-- navbar -->
+        <!-- start modal login -->
+        <article id="modalLogin" class="modal-login layout-centered">
+            <div class="modal-content">
+                <div id="close" class="close">
+                    <div class=""><button type="button" class="btn"><i class="fas text-dark fa-3x fa-times-circle"></i></button></div>
+                </div>
+                <main class="main-content justify-content-center py-4">
+                    <div class="container row">
+                        <div class="col-md-12 col-lg-6 col-sm-12 pr-0 order-md-first">
+                        <div class="p-5 h-100 shadow-5">
+                            <nav>
+                                <div class="nav nav-tabs justify-content-center mb-3" id="nav-tab" role="tablist">
+                                    <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="true">Register</a>
+                                    <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#login-tab" role="tab" aria-controls="login" aria-selected="false">Login</a>
+                                </div>
+                            </nav>
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="register" role="tabpanel" aria-labelledby="nav-home-tab">
+                                <h4 class="text-center">Register to your account</h4>
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <label for="username">Email Address</label>
+                                <div class="form-group input-group">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+
+                                <label for="username">Password</label>
+                                <div class="form-group input-group">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" id="password" name="password">
+                                    <div class="input-group-append">
+                                        <span toggle="#password" class="input-group-text"><i class="toggle-password fa fa-eye"></i></span>
+                                    </div>
+                                </div>
+
+                                <label for="username">Confirm Password</label>
+                                <div class="form-group input-group">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" onkeyup="checkPass(); return false;" id="confirmPass" name="cpassword">
+                                    <div class="input-group-append">
+                                        <span toggle="#ConfirmPassword" class="input-group-text"><i class="toggle-confirmPassword fa fa-eye"></i></span>
+                                    </div>
+                                </div>
+                                <div id="confirmMessage"></div>
+                                <div class="form-group">
+                                    <button class="btn btn-main btn-block" type="submit">Register</button>
+                                </div>    
+                                <div class="divider my-4">Or Regist With</div>
+                                <div class="text-center">
+                                    <a class="btn btn-circle btn-sm btn-facebook mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-circle btn-sm btn-google mr-2" href="#"><i class="fab fa-google"></i></a>
+                                </div>
+                                </div>
+                                <div class="tab-pane fade" id="login-tab" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                <h4 class="text-center">Sign in to your account</h4>
+                                <label for="username">Email Address</label>
+                                <div class="form-group input-group">
+                                    <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                                    </div>
+                                    <input type="text" class="form-control">
+                                </div>
+                
+                                <label for="username">Password</label>
+                                <div class="form-group input-group">
+                                    <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-key"></i></span>
+                                    </div>
+                                    <input type="password" class="form-control" name="password" >
+                                    <div class="input-group-append">
+                                    <span class="input-group-text"><i class="fa fa-eye"></i></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-main btn-block" type="submit">Login</button>
+                                </div>    
+                                <div class="divider">Or Login With</div>
+                                    <div class="text-center">
+                                        <a class="btn btn-circle btn-sm btn-facebook mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-circle btn-sm btn-google mr-2" href="#"><i class="fab fa-google"></i></a>
+                                    </div>
+                                </div>
+                            </div>            
+                            
+                    
+                        </div>
+                        </div>
+                
+                
+                        <div class="col-md-12 col-lg-6 col-sm-12 pl-0 order-md-last">
+                            <img src="assets/img/login.png" alt="login-img" class="right-img">
+                            
+                        </div>
+                    </div>
+                </main>
+            </div>
+            
+        </article>
+        <!-- login -->
+
+        <!-- start main-content -->
+        <main>
+
+            <!-- start header -->
+            <header class="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Book go bous</h5>
+                                    <ul class="nav nav-pills mb-3 justify-content-center py-2" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#one-way" role="tab" aria-controls="pills-home" aria-selected="true">one way</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#round" role="tab" aria-controls="pills-profile" aria-selected="false">round trip</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="one-way" role="tabpanel" aria-labelledby="pills-home-tab">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="text-left"><i class="fas fa-map-marker-alt"></i> From</label>
+                                                        <select class="form-control form-control-sm">
+                                                            <option>Cairo</option>
+                                                            <option>alex</option>
+                                                            <option>aswan</option>
+                                                            <option>luxor</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="text-left"><i class="fas fa-map-marker-alt"></i> To</label>
+                                                        <select class="form-control form-control-sm">
+                                                            <option>Cairo</option>
+                                                            <option>alex</option>
+                                                            <option>aswan</option>
+                                                            <option>luxor</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label class="text-left"><i class="fas fa-calendar-alt"></i>Departure Date</label>
+                                                        <input class="form-control" type="date" placeholder="First name">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="round" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 d-flex align-items-center">
+                            <div class="header__caption">
+                                <h4 class="header__caption--h4">Book Your Go Bus Now!</h4>
+                                <h6 class="header__caption--h6">Book your bus with your credit card in less than two minutes.</h6>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- end header -->
+
+            <!-- section flights  -->
+            <section class="flights">
+                <div class="container">
+                    <h2 class="heading">Our flights</h2>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12 my-4">
+                            <div class="flights__info">
+                                <img class="img-fluid" src="assets/img/flights/ghurdka.jpg" alt="">
+                                <div class="img-details text-white">
+                                    <h4>ghurdka details</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullamssdsadawdafwdasdwdsad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 my-4">
+                            <div class="flights__info">
+                                <img class="img-fluid" src="assets/img/flights/Gouna.jpg" alt="">
+                                <div class="img-details text-white">
+                                    <h4>ghurdka details</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullamssdsadawdafwdasdwdsad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 my-4">
+                            <div class="flights__info">
+                                <img class="img-fluid" src="assets/img/flights/sharm.jpg" alt="">
+                                <div class="img-details text-white">
+                                    <h4>ghurdka details</h4>
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullamssdsadawdafwdasdwdsad.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end flights -->
+
+            <!-- start about us -->
+            <section class="about">
+                <div class="container">            
+                    <h2 class="heading mb-5 text-white">About us</h2>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12 my-4">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-main mb-5">
+                                        <i class="fas fa-3x fa-users"></i>
+                                    </button>
+                                    <h3 class="card-title mb-0 font-weight-bold text-white">333</h3>
+                                    <h5 class="card-text text-white">Visitors</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 my-4">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <button type="button" class="btn btn-main mb-5">
+                                        <i class="fas fa-3x fa-plane-departure"></i>
+                                    </button>
+                                    <h3 class="card-title mb-0 font-weight-bold text-white">333</h3>
+                                    <h5 class="card-text text-white">Tours</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 my-4">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <button class="btn btn-main mb-5">
+                                        <i class="fas fa-3x fa-user-clock"></i>
+                                    </button>
+                                    <h3 class="card-title mb-0 font-weight-bold text-white">333</h3>
+                                    <h5 class="card-text text-white">Customers</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 my-5">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <button class="btn btn-main mb-4">
+                                        <i class="fas fa-3x fa-cart-plus"></i>
+                                    </button>
+                                    <h3 class="card-title mb-0 font-weight-bold text-white">333</h3>
+                                    <h5 class="card-text text-white">Orders</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- end about us -->
+
+            <section class="what-we-offer">
+                <h2 class="heading">Flight Classes</h2>
+                <div class="container">
+                    <div class="slider-arrows-circle-dark" data-provide="slider" data-slides-to-show="3" data-dots="true" data-arrows="true">
+                        <div class="p-2">
+                            <div class="card shadow-5 d-block">
+                                <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Image at top</h5>
+                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+                                    <a class="fs-12 fw-600" href="#">Read more <i class="fa fa-angle-right pl-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="card shadow-5 d-block">
+                                <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Image at top</h5>
+                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+                                    <a class="fs-12 fw-600" href="#">Read more <i class="fa fa-angle-right pl-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="card shadow-5 d-block">
+                                <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Image at top</h5>
+                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+                                    <a class="fs-12 fw-600" href="#">Read more <i class="fa fa-angle-right pl-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="card shadow-5 d-block">
+                                <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Image at top</h5>
+                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+                                    <a class="fs-12 fw-600" href="#">Read more <i class="fa fa-angle-right pl-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-2">
+                            <div class="card shadow-5 d-block">
+                                <img class="card-img-top" src="assets/img/1.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Image at top</h5>
+                                    <p>Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title.</p>
+                                    <a class="fs-12 fw-600" href="#">Read more <i class="fa fa-angle-right pl-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </section>
+
+            <section class="website-info">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <h5 class="text-left text-white"><i class="fas text-white mr-2 fa-map-marker-alt" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ex!</h5>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <h2 class=" text-white">Altech</h2>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <button class="btn btn-outline-black text-white">info@example.com</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="payment">
+                <h2 class="heading my-5">Payements Methods</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-6 my-3"><img class="img-fluid" src="assets/img/visa-payement.png" alt=""></div>
+                        <div class="col-md-3 col-6 my-3"><img class="img-fluid" src="assets/img/aman.png" alt=""></div>
+                        <div class="col-md-3 col-6 my-3"><img class="img-fluid" src="assets/img/bee.jpg" alt=""></div>
+                        <div class="col-md-3 col-6 my-3"><img class="img-fluid" src="assets/img/fawry-en.png" alt=""></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- main-content -->
+
+        <!-- Start footer -->
+        <footer class="footer text-white bg-main border-0" data-overlay="8">
+            <div class="container py-7">
+                <div class="row gap-y">
+
+                    <div class="col-lg-4 col-md-6">
+                        <h6 class="mb-4"><strong>About our Company</strong></h6>
+                        <div class="nav flex-column">
+                            <p>We are the best world Information Technology Company. Providing the highest quality in hardware &amp; Network solutions. About more than 20 years of experience and 1000 of innovative achievements.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <h6 class="mb-4"><strong>Product</strong></h6>
+                        <div class="nav flex-column">
+                            <li><a href="#">Make Appointment</a></li>
+                            <li><a href="#">Customer Services</a></li>
+                            <li><a href="#">Department Services</a></li>
+                            <li><a href="#">About Company</a></li>
+                            <li><a href="#">Our Case Studies</a></li>
+                            <li><a href="#">Free Consultation</a></li>
+                            <li><a href="#">Meet Our Experts</a></li>
+                            <li><a href="#">Our Business Growth</a></li>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-lg-4 widget-area">
+                        <div class="widget flicker_widget clearfix">
+                            <h3 class="widget-title">News Letter</h3>
+                            <div class="textwidget widget-text">
+                                    Sign up today for hints, tips and the latest product news
+                                    <form id="subscribe-form" class="newsletter-form my-3" method="post" action="#" data-mailchimp="true">
+                                        <div class="form-group input-group">
+                                            <input type="text" class="form-control" placeholder="Email address">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="button">
+                                                    <i class="far fa-2x fa-paper-plane"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div id="subscribe-msg"></div>
+                                    </form>
+                                    <h5 class="mb-20">Follow Us On</h5>
+                                    <div class="social">
+                                        <a class="social-facebook border rounded-circle" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="social-twitter border rounded-circle" href="#"><i class="fab fa-twitter"></i></a>
+                                        <a class="social-youtube border rounded-circle" href="#"><i class="fab fa-youtube"></i></a>
+                                        <a class="social-instagram border rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="container">
+                <div class="row no-gutters justify-content-between">
+
+                    <h5 class="">© All rights reserved.</h5>
+                    <div class="row no-gutters justify-content-between">
+                        <ul class="row list-unstyled">
+                            <li class="mx-3"><a href="#">About Us</a></li>
+                            <li class="mx-3"><a href="#">Services</a></li>
+                            <li class="mx-3"><a href="#">Privacy</a></li>
+                        </ul>
+                        <div class="row">
+                            <div class="col"><img src="assets/img/visa-payement.png" class="img-fluid mx-2" alt="payment-img"></div>
+                            <div class="col"><img src="assets/img/aman.png" class="img-fluid mx-2" alt="payment-img"></div>
+                            <div class="col"><img src="assets/img/bee.jpg" class="img-fluid mx-2" alt="payment-img"></div>
+                            <div class="col"><img src="assets/img/fawry-en.png" class="img-fluid mx-2" alt="payment-img"></div>
+                            <div class="col"><img src="assets/img/meeza-no-bg.png" class="img-fluid mx-2" alt="payment-img"></div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+
+        <!-- end footer -->
+
+    <!-- script -->
+    <script src="assets/js/page.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script>
+        	function checkPass() {
+		//Store the password field objects into variables ...
+		var pass1 = document.getElementById("password");
+		var pass2 = document.getElementById("confirmPass");
+		//Store the Confimation Message Object ...
+		var message = document.getElementById("confirmMessage");
+		//Set the colors we will be using ...
+		var goodColor = "#66cc66";
+		var badColor = "#f40303";
+		//Compare the values in the password field
+		//and the confirmation field
+		if (pass1.value == pass2.value) {
+			//The passwords match.
+			//Set the color to the good color and inform
+			//the user that they have entered the correct password
+			message.style.color = goodColor;
+			message.innerHTML = "";
+		} else {
+			//The passwords do not match.
+			//Set the color to the bad color and
+			//notify the user.
+
+			message.style.color = badColor;
+			message.innerHTML =
+				"<div class='alert alert-danger' role='alert'>Password doesn't match</div>";
+		}
+	}
+    </script>
+    </body>
+</html>

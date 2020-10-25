@@ -1,0 +1,631 @@
+
+
+// Main Colors
+$maincolor : #2d4a8a;
+$dopal-light : #F94C0814;
+$green-success: #21A028;
+$gray:#cccccc;
+$dark-gray:#88888899;
+
+
+
+body{
+    font-family: 'Poppins',sans-serif !important;
+}
+.vh-95{
+    height: 95vh;
+}
+.h-100{
+    height: 100%;
+}
+// General
+.border-1{
+    border:1px solid rgba(0,0,0,0.3); 
+}
+.border-2{
+    border:2px solid rgba(0,0,0,0.3); 
+}
+.img-profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.navbar{
+    top: 0;
+    box-shadow: 0 4px 9px rgba(0,0,0,0.05);
+}
+.text-main{
+    color:$maincolor !important;
+}
+.bg-main{
+    background-color: $maincolor;
+}
+.bg-orange-light{
+    background-color: $dopal-light;
+}
+.bg-gray-light{
+    background-color: #ECECEC !important;
+}
+.text-gray-light{
+    color: #ECECEC !important;
+}
+.bg-gradient{
+    background-image: linear-gradient(to left bottom, #ffc3aa, #ffd1ae, #ffe0b4, #ffefbf, #fffdcc);
+}
+
+.text-black{
+    color: #000;
+}
+.text-graylight{
+    color: $gray;
+}
+.text-darkgray{
+    color: $dark-gray;
+}
+.hr-gray
+{
+    height: 1px;
+    width: 1px;
+    background: #ccc;
+}
+.hr-gray-100
+{
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+}
+.btn-main{
+    background-color: $maincolor;
+    color: #fff;
+    &:hover{
+        color: #fff;
+    }
+}
+.btn-outline-black{
+    border: 3px solid #fff;
+}
+.btn-outline-main{
+    color: $maincolor !important;
+    background: transparent;
+    border: 2px solid $maincolor;
+    &:hover{
+        background-color: $maincolor;
+        color: #fff!important;
+    }
+}
+.border-main
+{
+    border:2px solid $maincolor !important;
+}
+
+.badge-main{
+    background-color: $maincolor;
+    color: #fff;
+}
+
+.border-rounded
+{
+    border: 1px white solid;
+    border-radius: 10rem;
+}
+
+.border-gray
+{
+    border: 1px $gray solid;
+    border-radius: 10px;
+}
+
+.w-50px
+{
+    min-width: 50px;
+    max-width: 55px;
+}
+.heading{
+    font-size: 3.5rem;
+    text-align: center;
+    &::before{
+        content: "";
+        display: inline-block;
+        height: 6px;
+        width: 80px;
+        background-color: $maincolor;
+        margin-bottom: 16px;
+        margin-right: 20px;
+    }
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 6px;
+        width: 80px;
+        background-color: $maincolor;
+        margin-bottom: 16px;
+        margin-left: 20px;
+    }
+}
+.nav-tabs{
+    border-bottom: 0;
+    &:hover{
+        border-bottom: 0;
+    }
+    .nav-link.active, .nav-item.show .nav-link {
+        color: $maincolor;
+        background-color: #fff;
+        border-color: #fff;
+        border-bottom:2px solid $maincolor;
+        &:hover{
+            color: #000;
+        }
+    }
+    .nav-link{
+    padding: .5rem 2rem;
+        &:hover{
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+// Home page
+#home-banner{
+    background-image: url(../img/home.png);
+}
+// navbar drop down registed
+.dropdown{
+    .dropdown-menu{
+        padding: 0;
+        .nav-pills .nav-link{
+            padding: 5px 20px;
+        }
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+            border-left: 2px solid $maincolor;
+            color: #000;
+            background-color: #fff;
+        }
+    }
+    
+}
+// home page index
+.navbar{
+    box-shadow: none;
+    .navbar-left{
+        .navbar-brand{
+            .logo{
+                height: 40px;
+            }
+        }
+    }
+}
+// header
+.header{
+    height: 600px;
+    background-image: url(../img/cover__home.jpeg);
+    background-size: 100% 100%;
+    &__caption{
+        &--h4{
+            font-size: 3.5rem;
+            font-weight: 600;
+        }
+        &--h6{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+    .card{
+        .nav-pills{
+            .nav-link{
+                color: #000;
+                padding: 5px 4rem;
+                &:hover{
+                    color: #000;
+                }
+                &.active{
+                    color: #fff;
+                    background-color: $maincolor;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:900px)
+{
+    .header__caption{
+        display: none;
+    }
+}
+// flights
+.flights{
+    padding: 5rem 0;
+    &__info{
+        position: relative;
+        .img-fluid{
+            width: 100%;
+            height: 300px;
+        }
+        .img-details{
+            background-color: rgba(0,0,0,0.4);
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 15px 30px;
+            
+        }
+    }
+    
+}
+// about
+.about{
+    background-image: linear-gradient(to right bottom , rgba(2, 20, 162 ,0.5) , rgba(2, 20, 162 ,0.5)), url(../img/single-img-twentyone.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 3rem 0;
+    .heading{
+        &::before{
+            background-color: #fff;
+        }
+        &::after{
+            background-color: #fff;
+        }
+    }
+    .card{
+        background-color: transparent;
+        .card-body{
+            padding: 35px;
+            .btn{
+                padding: 1.5rem;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+// what-we-offer
+.what-we-offer{
+    padding: 100px 0;
+    .slick-prev{
+        left: -5rem;
+    }
+    .slick-next{
+        right: -5rem;
+    }
+}
+
+// websites info
+.website-info{
+    background-size: cover;
+    background-image: linear-gradient(to right bottom , rgba(2, 20, 162 ,0.5) , rgba(2, 20, 162 ,0.5)), url(../img/single-img-fourteen.jpg);
+    padding: 50px;
+}
+
+// payement information
+.payment{
+    padding: 70px 0;
+}
+// footer
+footer{
+    .img-fluid{
+        height: 30px;
+    }
+}
+// filter page
+.filter{
+    &__header{
+        height: 150px;
+        background-size: cover;
+        background-image: url(../img/cover__home.jpeg);
+        h4{
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+    }
+}
+// Form Block
+.Form-main{
+    border:1px $gray solid;
+    border-radius: 4px;
+}
+
+.text-green {
+    color: $green-success;
+}
+// register and login page
+.modal-login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100000000;
+
+    #close{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        z-index: 2131321213213213;
+    }
+    
+}
+
+
+
+// fillter page
+.filter{
+    .extras-row{
+        .card{
+            background-color: #ECF6F8;
+        }
+    }
+    .list-activites-card{
+        .card{
+            .card-body{
+                .img-badges-left {
+                    position: absolute;
+                    top: 20px;
+                    left: 35px;
+                }
+                .img-badges-right{
+                    i{
+                        position: absolute;
+                        top: 20px;
+                        right: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+// booking page
+.booking{
+    &__stations{
+        &--btns{
+            .active{
+                display: inline;
+            }
+        }
+    }
+    &__bus{
+        .btn{
+            padding: 8px 10px 6px;
+        }
+        &--seats{
+            .btn-seats-bg{
+                padding: 6px 6px;
+            }
+        }
+    }
+    &__checkout{
+        .nav-tabs{
+            .nav-link{
+                padding: .8rem 3rem;
+            }
+        }
+    }
+}
+// profile page
+.profile{
+    &__header{
+        height: 150px;
+        background-size: cover;
+        background-image: url(../img/cover__home.jpeg);
+    }
+    &__img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .nav-pills .nav-link{
+        padding: 10px 20px;
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+        border-left: 2px solid $maincolor;
+        color: #000;
+        background-color: #fff;
+    }
+    
+}
+
+// contact page
+.contact{
+    .nav-pills .nav-link{
+        padding: 10px 20px;
+        &:hover{
+            color: #000;
+        }
+    }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+        border-left: 2px solid $maincolor;
+        padding: 10px 20px;
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+// branches
+.branches{
+    &__row{
+        &:hover{
+            background-color: rgba(0,0,0,0.09);
+        }
+    }
+    .head{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .table th , .table td{
+        border-top: none;
+    }
+}
+
+// media queries
+@media screen and (max-width:1025px){
+    .what-we-offer{
+        .slick-prev{
+            display: none !important;
+        }
+        .slick-next{
+            display: none !important;
+        }
+    }
+}
+@media screen and (max-width:800px){
+    .right-img{
+        display: none;
+    }
+    .details{
+        &__general{
+            &--info{
+                p{
+                    margin: 30px 0 10px 0;
+                }
+                h4{
+                    margin: 30px 0 10px 0;
+                }
+            }
+        }
+    }
+    .modal-login{
+        #close{
+            top: 20px;
+            right: 20px;
+        }
+    }
+    .booking__search--labelnone{
+        display: none;
+    }
+}
+@media screen and (min-width:900px){
+    #filterBtn{
+        display: none;
+    }
+    #bookingFilterBtn{
+        display: none;
+    }
+}
+@media screen and (max-width:900px){
+    #filter{
+        display: none;
+    }
+    #bookingFilterCard{
+        display: none;
+    }
+}
+@media screen and (max-width:1000px){
+    .filter{
+        .card{
+            .col-lg-4{
+                    .img-main{
+                        width: 100%;
+                    }
+            }
+            .card-body{
+                .card-description{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .booking{
+        .user-cancellation{
+            .list{
+                margin-bottom: 20px;
+            }
+            .tabs{
+                .card{
+                    .col-lg-4{
+                        .img-main{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .card{
+                .card-body{
+                    .card-description{
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1020px){
+    .filter{
+        .list-activites-card{
+            .card{
+                .col-lg-4{
+                    .img-main{
+                        width: 100%;
+                        height: 180px;
+                    }
+                    padding-right: 0;
+                }
+            }
+        }
+        
+    }
+    .booking{
+        .user-cancellation{
+            .tabs{
+                .card{
+                    .col-lg-4{
+                        .img-main{
+                            width: 270px;
+                            height: 180px;
+                        }
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .booking{
+        .user-cancellation{
+            .card{
+                .col-lg-4{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+    .heading{
+        &::before{
+            display: block;
+            margin-left: auto;
+        }
+        &::after{
+            display: block;
+            margin-right: auto;
+            margin-top: 16px;
+        }
+    }
+    .profile{
+        &__right{
+            margin-top: 20px;
+        }
+    }
+}
+input[type="checkbox"] {
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+}
+input[type="checkbox"] + label:before {
+    border: 1px solid rgba(0,0,0,0.5);
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 20px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 18px;
+}
+input[type="checkbox"]:checked + label:before {
+    color: $maincolor;
+    content: "\2713";
+    text-align: center;
+}
